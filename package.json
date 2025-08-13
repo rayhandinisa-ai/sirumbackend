@@ -2,6 +2,7 @@
   "name": "sirumbackend",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -19,6 +20,7 @@
     "multer": "^2.0.1",
     "mysql2": "^3.10.3",
     "node-firebird": "^1.1.8",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "serverless-http": "^3.2.0"
   }
 }
