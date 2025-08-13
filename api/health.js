@@ -1,5 +1,6 @@
-const express = require("express");
-const serverless = require("serverless-http");
+// api/health.js
+import express from "express";
+import serverless from "serverless-http";
 
 const app = express();
 
@@ -7,5 +8,4 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "ok", time: new Date() });
 });
 
-
-module.exports = serverless(app);
+export default serverless(app);
