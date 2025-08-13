@@ -1,12 +1,11 @@
 const express = require("express");
-const router = express.Router();
+const serverless = require("serverless-http");
 
-router.get("/", (req, res) => {
-  res.json({
-    status: "ok",
-    message: "Backend API is healthy ✅",
-    timestamp: new Date()
-  });
+const app = express();
+
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok", time: new Date() });
 });
 
-module.exports = router;
+
+module.exports = serverless(app);

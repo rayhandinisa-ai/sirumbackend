@@ -23,5 +23,8 @@ git branch -M main
 :: 8. Tambahkan remote GitHub
 git remote add origin https://github.com/rayhandinisa-ai/sirum.git
 
+::9. Jika sudah ada remove dulu repositorynya
+git remote remove origin rayhandinisa-ai/sirum.git
+
 :: 9. Push ke GitHub
 git push -u origin main
